@@ -14,8 +14,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/foundation.css" />
-<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700italic,700,600italic,600,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
 <!--<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/jquery.js"></script>-->
 <?php wp_enqueue_script( "jquery" ); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr.js"></script>
