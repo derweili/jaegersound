@@ -28,6 +28,7 @@ p{
 	  font-size : 1.1325rem;
 	  color : #000000;
 	  color : rgb(0, 0, 0);
+	  font-family : Josefin Sans;
 }
 
 h2{
@@ -40,7 +41,7 @@ h2{
 	text-align: left;
 }
 h3{
-	font-family: 'Josefin Sans', sans-serif;
+	/*font-family: 'Josefin Sans', sans-serif;*/
 	font-weight : bold;
 	font-size : 1.5625rem;
 	color : #000000;
@@ -50,4 +51,7 @@ h3{
 }
 h1{
 	text-align: left;
+}
+*{
+	max-width: 640px;
 }

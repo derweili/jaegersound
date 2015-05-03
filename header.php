@@ -17,6 +17,7 @@
 <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
 <!--<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/jquery.js"></script>-->
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.png" />
 <?php wp_enqueue_script( "jquery" ); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jcarousel.min.js"></script>
@@ -41,20 +42,16 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div id="page" class="hfeed site">
-	<!--<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'jaegersound' ); ?></a>-->
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'jaegersound' ); ?></a>
 
-		<!--<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div><! .site-branding -->
 		<div class="contain-to-grid fixed">
 			<nav class="top-bar" data-topbar role="navigation">
 				<ul class="title-area">
 				    <li class="name">
-				    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jaegersound.jpg" style="max-width:202px;"/></a>
+				    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jaegersound.jpg" style="max-width:152px;margin-top:8px;"/></a>
 				    </li>
 					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-				    <li class="toggle-topbar menu-icon"><a href="#"><span>Menü</span></a></li>
+				    <li class="toggle-topbar"><a href="#"><span>Menü</span></a></li>
 				 </ul>
 				<section class="top-bar-section">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container_class' => 'right' ) ); ?>

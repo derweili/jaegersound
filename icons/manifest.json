@@ -1,0 +1,25 @@
+{
+  "short_name": "Jaegersound",
+  "name": "Jaegersound",
+  "icons": [
+    {
+      "src": "icon-128x128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "ms-touch-icon-144x144-precomposed.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "chrome-touch-icon-192x192.png",
+      "sizes": "192x192"
+    },
+  ],
+  "start_url": "http://jaegersound.de",
+  "display": "browser",
+  "orientation": "portrait"
+}

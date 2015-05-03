@@ -139,3 +139,59 @@ function unregister_default_wp_widgets() {
 	unregister_widget('WP_Widget_Tag_Cloud');
 }
 add_action('widgets_init', 'unregister_default_wp_widgets', 1);
+
+
+
+//Werkzeuglseite
+add_action( 'admin_bar_menu', 'remove_wp_nodes', 999 );
+
+function remove_wp_nodes()
+{
+    global $wp_admin_bar;  
+    $wp_admin_bar->remove_node( 'wp-logo' ); // Entfernt das WordPress-Logo
+    //$wp_admin_bar->remove_node( 'site-name' ); // Entfernt den Namen der Seite
+    $wp_admin_bar->remove_node( 'comments' ); // Entferne den Abschnitt "Kommentare"
+    //$wp_admin_bar->remove_node( 'new-content' ); // Entfernt den Abschnitt "Neu"
+
+    // Es ist auch möglich die Unterpunkte des Abschnitts "Neu" einzeln zu entfernen 
+    //$wp_admin_bar->remove_node( 'new-post' ); // Entfernt den Menüpunkt "Neuer Beitrag"
+    $wp_admin_bar->remove_node( 'new-link' ); // Entfernt den Menüpunkt "Neuer Link"
+    //$wp_admin_bar->remove_node( 'new-media' ); // Entfernt den Menüpunkt "Neue Datei"
+    //$wp_admin_bar->remove_node( 'new-page' ); // Entfernt den Menüpunkt "Neue Seite"
+    $wp_admin_bar->remove_node( 'new-user' ); // Entfernt den Menüpunkt "Neuer Benutzer"
+    $wp_admin_bar->remove_node( 'search' ); // Entfernt den Menüpunkt "Suche"
+    $wp_admin_bar->remove_node( 'updates' ); // Entfernt den Menüpunkt "Suche"
+}
+
+
+
+/* Navigationspunkte aus dem WordPress-Dashboard entfernen */ 
+function remove_menus () {
+global $menu;
+		$restricted = array(
+//			__('Beiträge'),
+//			__('Medien'),
+			__('Links'),
+//			__('Seiten'),
+			__('Kommentare'),
+//			__('Design'),
+//			__('Plugins'),
+//			__('Benutzer'),
+			__('Werkzeuge'));
+		end ($menu);
+		while (prev($menu)){
+			$value = explode(' ',$menu[key($menu)][0]);
+			if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
+		}
+}
+add_action('admin_menu', 'remove_menus');
+
+
+//Remove Buttons form WYSIWYG Editor
+function myplugin_tinymce_buttons($buttons) {
+	//Remove the format dropdown select and text color selector
+	$remove = array('forecolor', 'alignjustify', 'italic');
+
+	return array_diff($buttons,$remove);;
+}
+add_filter('mce_buttons_2','myplugin_tinymce_buttons');

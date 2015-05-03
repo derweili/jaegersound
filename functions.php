@@ -152,6 +152,10 @@ require get_template_directory() . '/inc/cleanup.php';
  * Add Theme Options Page
  */
 require get_template_directory() . '/inc/theme-options.php';
+/**
+ * Add icons (e.g. touchicon iphone)
+ */
+require get_template_directory() . '/inc/icons.php';
 
 /**
  * Require Plugins through TGM Plugin Activation http://tgmpluginactivation.com/
@@ -346,10 +350,10 @@ add_filter('the_content', 'jaegersound_remove_class');
 
 
 //Responsive Video Embedd
-add_filter('embed_oembed_html', 'my_embed_oembed_html', 99, 4);
-function my_embed_oembed_html($html, $url, $attr, $post_id) {
-  return '<div class="flex-video widescreen vimeo">' . $html . '</div>';
-}
+//add_filter('embed_oembed_html', 'my_embed_oembed_html', 99, 4);
+//function my_embed_oembed_html($html, $url, $attr, $post_id) {
+//  return '<div class="flex-video widescreen vimeo">' . $html . '</div>';
+//}
 
 add_filter( 'category_rewrite_rules', 'filter_category_rewrite_rules' ); //Delete Category from Permalink http://fastwp.de/3540/
 function filter_category_rewrite_rules( $rules ) {
@@ -395,3 +399,17 @@ function remove_class($output) //remoce css classes from images
 	}
 add_filter('post_thumbnail_html', 'remove_class');
 add_filter('the_content', 'remove_class');
+
+
+//Login Logo
+function my_login_logo() { ?>
+    <style type="text/css">
+        .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/site-login-logo.png);
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/site-login-logo.svg);
+            padding-bottom: 0px;
+            margin-bottom: 0;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );

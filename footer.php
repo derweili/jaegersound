@@ -15,19 +15,7 @@
     <?php 
     $options = get_option('jaegersound_theme_options');
     echo do_shortcode( $options['footershortcode'] ); ?>
-<!--<form action="#kontakt" method="post">
-<div class="row">
-	<div class="large-4 columns">
-		<input type="text" placeholder="Name"/>
-		<input type="email" placeholder="Email"/>
-	</div>
-	<div class="large-5 columns">
-		<textarea placeholder="Nachricht"></textarea>
-	</div>
-	<div class="large-3 columns">
-		<input type="submit" class="submit" />
-	</div>
-</div><!-- .site-info -->
+
 		</form>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
