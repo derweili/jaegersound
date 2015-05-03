@@ -201,4 +201,24 @@ function img_unautop($pee) {
 }
 endif;
 
+
+
+//CSS Klassen von Bildern entfernen
+function jaegersound_remove_class($output)
+	{
+	$output = preg_replace('//', '', $output);
+	return $output;
+	}
+add_filter('post_thumbnail_html', 'jaegersound_remove_class');
+add_filter('the_content', 'jaegersound_remove_class');
+
+
+function filter_ptags_on_images($content) //remove p-tags from imagesavealpha(image, saveflag)
+	{
+		return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+	}
+add_filter('the_content', 'filter_ptags_on_images');
+
+
+
 ?>

@@ -13,21 +13,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/foundation.css" />
-<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
-<!--<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/jquery.js"></script>-->
-<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.png" />
-<?php wp_enqueue_script( "jquery" ); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jcarousel.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/touchswipe.min.js"></script>
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.png" />
 <?php
 	 $options = get_option('jaegersound_theme_options');
 	  echo $options['analytics'];
 ?>
 <?php wp_head(); ?>
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/theme.css">
 
 </head>
 

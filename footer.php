@@ -19,12 +19,9 @@
 		</form>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/foundation.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/foundation/foundation.topbar.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/foundation/foundation.clearing.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jcarousel.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/touchswipe.min.js"></script>
 
+
+<?php wp_footer(); ?>
 <script>
 jQuery(document).foundation();
 </script>
@@ -93,7 +90,5 @@ jQuery(document).foundation();
 
 
   </script>
-<?php wp_footer(); ?>
-
 </body>
 </html>
