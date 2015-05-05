@@ -15,7 +15,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php
-		jaegersound_home_news('Referenzen', $post->ID); //Referenzen einfügen
+		jaegersound_home_news('Referenzen', $post->ID, 'Referenzen'); //Referenzen einfügen
 ?>
 
 <?php get_footer(); ?>

@@ -277,9 +277,10 @@ if ( ! function_exists( 'jaegersound_home_news' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
-function jaegersound_home_news($a, $b) {
+function jaegersound_home_news($a, $b, $c) {
 	// Hide category and tag text for pages.
 	if(empty($a)){$a = 'Referenzen';}
+	if(empty($c)){$c = 'Referenzen';}
 	global $post;  
     $the_query = array(
 		'posts_per_page'   => '3',
@@ -294,9 +295,10 @@ function jaegersound_home_news($a, $b) {
     );
     $posts = get_posts( $the_query );  
     if(!empty($posts)):
-		echo '<div class="related-posts">
+		echo '
+	<div class="related-posts">
 		<div class="row">
-				<h3>'.$a.'</h3>';
+				<h3>'.$c.'</h3>';
 
 	    	$postcount = 1;
 	            foreach( $posts as $post ): setup_postdata( $post );

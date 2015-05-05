@@ -46,7 +46,7 @@ get_header(); ?>
 		endif;
 	?>
 	<?php
-	jaegersound_home_news('Weitere Referenzen', $post->ID);
+		jaegersound_home_news('Referenzen', $post->ID, 'Weitere Referenzen');
 	?>
 
 <?php get_footer(); ?>
