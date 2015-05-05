@@ -55,3 +55,10 @@ h1{
 *{
 	max-width: 640px;
 }
+.post-format-aside{
+	background:#0267B2;
+	color:white!important;
+}
+.post-format-aside *{
+	color:white!important;
+}

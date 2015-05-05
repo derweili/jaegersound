@@ -248,6 +248,7 @@ function jaegersound_home_slider() {
       'orderby'          => 'date',
       'order'            => 'DESC',
       'suppress_filters' => false,
+      'meta_key'=>'_thumbnail_id',
     );
     $posts = get_posts( $the_query );  
     if(!empty($posts)):
@@ -281,13 +282,15 @@ function jaegersound_home_news($a, $b) {
 	if(empty($a)){$a = 'Referenzen';}
 	global $post;  
     $the_query = array(
-      'posts_per_page'   => '3',
-      'post_type'     => 'post',
-      'orderby'          => 'date',
-      'order'            => 'DESC',
-      'category_name'    => 'startseite',
-      'exclude'			=> $b,
-      'suppress_filters' => false,
+		'posts_per_page'   => '3',
+		'post_type'     => 'post',
+		'orderby'          => 'date',
+		'order'            => 'DESC',
+		'category_name'    => $a,
+		'exclude'			=> $b,
+		'suppress_filters' => false,
+		'meta_key'=>'_thumbnail_id',
+
     );
     $posts = get_posts( $the_query );  
     if(!empty($posts)):
