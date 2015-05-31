@@ -5,7 +5,9 @@
 body, p{
 	font-family: 'Josefin Sans', sans-serif;
 }
-
+.skip-link.screen-reader-text{
+	margin:1rem;
+}
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Josefin Slab', serif;
 }
@@ -95,10 +97,20 @@ body:not(.home) .current-menu-item a{
     float: right !important;
     margin-top: 19px;
 }
+
+/*Mobil Menü*/
+.top-bar .toggle-topbar a {
+    height: 4.125rem;
+    padding: 1rem 1.938rem;
+}
 @media (max-width: 640px){
 	.right{
 		float:left!important
 	}
+}
+.top-bar.expanded .top-bar-section .right {
+    display: block;
+    width: 100%;
 }
 
 /* Single */
@@ -122,6 +134,7 @@ h1.entry-title{
     -o-column-count: 2;
     column-count: 2;
     margin-bottom: 0;
+    list-style: none;
 }
 .techdetails a{
 	color:white;
@@ -295,6 +308,10 @@ a.buttom{
 a.buttom:hover{
 text-decoration:underline;
 }
+.button a{
+	color: white;
+}
+
 
 .slideshow-wrapper{
 	margin: 1.25rem 0;
@@ -307,7 +324,7 @@ text-decoration:underline;
 	margin:0;
 }
 .archive .entry-content h1{
-	margin:0.5rem 0 0.25rem 0;
+	margin:1rem 0;
 }
 
 .taxonomy-description, article.format-aside {
@@ -368,3 +385,15 @@ text-decoration:underline;
 .page-template-template-leistungen .techdetails{
 	margin-bottom: 2rem;
 }
+
+
+img.alignleft {
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.nav-next.button {
+  float: right;
+}
+
+

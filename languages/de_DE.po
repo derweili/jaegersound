@@ -1,0 +1,298 @@
+# Copyright (C) 2015 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: jaegersound\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2015-01-06 02:24:02+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-05-28 23:26+0100\n"
+"Last-Translator: Julian Weiland <jw@julian-weiland.de>\n"
+"Language-Team: Julian Weiland <jw@julian-weiland.de>\n"
+"X-Generator: Poedit 1.5.5\n"
+"Language: Deutsch\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Diese Seite kann nicht gefunden werden"
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "Es scheint als wurde nichts gefunden."
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "Meistgenutzte Kategorien"
+
+#. translators: %1$s: smiley
+#: 404.php:44
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Inm Monatsarchiv nachschauen. %1$s"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:35 comments.php:52
+msgid "Comment navigation"
+msgstr "Kommentar Navogation"
+
+#: comments.php:36 comments.php:53
+msgid "&larr; Older Comments"
+msgstr "Ältere Kommentare"
+
+#: comments.php:37 comments.php:54
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare"
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: content-none.php:19
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Bist du bereit deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s"
+"\">Hier geht es los</a>."
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Tut uns leid, aber leider wurde nichts gefunden, das Ihrer Suche entspricht."
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Es scheint als könnten wir die aufgerufene Seite nicht finden."
+
+#: content-page.php:18 content-single.php:20 content.php:29
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: content-page.php:25 inc/template-tags.php:126
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#. translators: %s: Name of current post
+#: content.php:22
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Weiterlesen %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Mit Stolz präsentiert von %s"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+#: functions.php:53 header.php:31
+msgid "Primary Menu"
+msgstr "Hauptmenü Menü"
+
+#: functions.php:88
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: header.php:22
+msgid "Skip to content"
+msgstr "Zum Inhalt springen"
+
+#: inc/extras.php:64
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Beitragsnavigation"
+
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr "Ältere Beiträge"
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Neuere Beiträge"
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Beitragsnavigation"
+
+#: inc/template-tags.php:86
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Veröffentlicht am $s"
+
+#: inc/template-tags.php:91
+msgctxt "post author"
+msgid "by %s"
+msgstr "von %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:108 inc/template-tags.php:114
+msgid ", "
+msgstr ","
+
+#: inc/template-tags.php:110
+msgid "Posted in %1$s"
+msgstr "Veröffentlicht in %1$s"
+
+#: inc/template-tags.php:116
+msgid "Tagged %1$s"
+msgstr "Tagged %1$s"
+
+#: inc/template-tags.php:122
+msgid "Leave a comment"
+msgstr "Hinterlasse ein Kommentar"
+
+#: inc/template-tags.php:122
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: inc/template-tags.php:122
+msgid "% Comments"
+msgstr "% Kommentare"
+
+#: inc/template-tags.php:143
+msgid "Category: %s"
+msgstr "Kategorie: %s"
+
+#: inc/template-tags.php:145
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+#: inc/template-tags.php:147
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: inc/template-tags.php:149
+msgid "Year: %s"
+msgstr "Jahr: %s"
+
+#: inc/template-tags.php:149
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags.php:151
+msgid "Month: %s"
+msgstr "Monat"
+
+#: inc/template-tags.php:151
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags.php:153
+msgid "Day: %s"
+msgstr "Tag: %s"
+
+#: inc/template-tags.php:153
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: inc/template-tags.php:155
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Kurzmitteilung"
+
+#: inc/template-tags.php:157
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Galerie"
+
+#: inc/template-tags.php:159
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Bilder"
+
+#: inc/template-tags.php:161
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Videos"
+
+#: inc/template-tags.php:163
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Zitate"
+
+#: inc/template-tags.php:165
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Links"
+
+#: inc/template-tags.php:167
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Status"
+
+#: inc/template-tags.php:169
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Audio"
+
+#: inc/template-tags.php:171
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Chat"
+
+#: inc/template-tags.php:173
+msgid "Archives: %s"
+msgstr "Archive: %s"
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:177
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:179
+msgid "Archives"
+msgstr "Archive"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#. Theme Name of the plugin/theme
+msgid "_s"
+msgstr "_s"
+
+#. Theme URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr "http://underscores.me"
+
+#. Description of the plugin/theme
+msgid ""
+"Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if "
+"you like. I'm a theme meant for hacking so don't use me as a <em>Parent "
+"Theme</em>. Instead try turning me into the next, most awesome, WordPress "
+"theme out there. That's what I'm here for."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://automattic.com/"
+msgstr ""

@@ -39,7 +39,7 @@
 			<nav class="top-bar" data-topbar role="navigation">
 				<ul class="title-area">
 				    <li class="name">
-				    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jaegersound.jpg" style="max-width:152px;margin-top:8px;"/></a>
+				    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jaegersound.svg" style="max-width:152px;height:100%;"/></a>
 				    </li>
 					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 				    <li class="toggle-topbar"><a href="#"><span>Menü</span></a></li>

@@ -31,7 +31,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php jaegersound_the_posts_navigation(); ?>
 
 		<?php else : ?>
 

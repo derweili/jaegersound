@@ -227,7 +227,7 @@ function jaegersound_register_scripts() {
     wp_register_script( 'foundation-topbar', get_template_directory_uri() . '/js/foundation/foundation.topbar.js', array( 'jquery', 'foundation' ), 1.0, true);
     wp_register_script( 'foundation-clearing', get_template_directory_uri() . '/js/foundation/foundation.clearing.js', array( 'jquery', 'foundation' ), 1.0, true);
  
-    wp_register_style( 'foundation', get_template_directory_uri() . '/css/foundation.css', array(), 1.0, 'screen' );
+    wp_register_style( 'foundation', get_template_directory_uri() . '/css/foundation.min.css', array(), 1.0, 'screen' );
     wp_register_style( 'JosefinSlab', 'http://fonts.googleapis.com/css?family=Josefin+Slab:400,700', array(), 1.0, 'screen' );
     wp_register_style( 'JosefinSans', 'http://fonts.googleapis.com/css?family=Josefin+Sans:400,700', array(), 1.0, 'screen' );
     wp_register_style( 'theme-css', get_template_directory_uri() . '/css/theme.css', array('foundation'), 1.0, 'screen' );
